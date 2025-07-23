@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 구글 폰트 링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Black+And+White+Picture&family=Gugi&family=Hi+Melody&display=swap"
+        rel="stylesheet">
+    <!--어썸 폰트 링크  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/0723study.css">
+    <title>0723과제</title>
+    <style>
+        .gugi-korean1 {
+            font-family: "Gugi", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .box {
+            background: linear-gradient(to left, #996633 0%, #ffffff 100%);
+            border-style: dashed;
+            box-shadow: 3px 3px 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="coffee"></div>
+    <h1 class="gugi-korean1" style="text-align: center;">카페</h1>
+    <div class="box">
+        <h2 style="text-align: center;">카페 소갯말</h2>
+        <strong>저희 카페는 원두를 직접 로스팅해서 커피를 제조하며,<br>디저트 또한 기성품이 아닌 직접 만든 제품입니다.</strong>
+    </div>
+    <h2 style="text-align: left;">커피</h2>
+    <ul>
+        <li>아메리카노</li>
+        <input type="radio" id="hot" name="ame" value="hotame">
+        <label for="hot"><i class="fa-solid fa-mug-hot"></i> HOT-4500원</label>
+        <br>
+        <input type="radio" id="cold" name="ame" value="cold">
+        <label for="cold"><i class="fa-solid fa-igloo"></i> COLD-5000원</label>
+        <li>카페라떼</li>
+        <input type="radio" id="hot1" name="rat" value="hotrat">
+        <label for="hot1"><i class="fa-solid fa-mug-hot"></i>HOT-5500원</label>
+        <br>
+        <input type="radio" id='cold1' name="rat" value="coldrat">
+        <label for="cold1"><i class="fa-solid fa-igloo"></i> COLD-6000원</label>
+        <li>카라멜 마끼아또</li>
+        <input type="radio" id="hot2" name="car" value="hotcar">
+        <label for="hot2"><i class="fa-solid fa-mug-hot"></i>HOT-6500원</label>
+        <br>
+        <input type="radio" id="cold2" name="car" value="coldcar">
+        <label for="cold2"><i class="fa-solid fa-igloo"></i> COLD-7000원</label>
+        <li>아인슈페너</li>
+        <input type="radio" id="hot3" name="in" value="hotin">
+        <label for="hot3"><i class="fa-solid fa-mug-hot"></i>HOT-6500원</label>
+        <br>
+        <input type="radio" id="cold3" name="in" value="coldin">
+        <label for="cold3"><i class="fa-solid fa-igloo"></i> COLD-7000원</label>
+    </ul>
+    <h2>브런치</h2>
+    <div id="cake"></div>
+    <div id="cookie"></div>
+    <div id="ice"></div>
+    <ul>
+        <li><i class="fa-solid fa-cake-candles"></i> 조각 케이크 (초코,생크림,고구마)-7500</li>
+        <li><i class="fa-solid fa-cookie"></i> 쿠키(화이트초코,말차,마카다미아)-5000</li>
+        <li><i class="fa-solid fa-ice-cream"></i> 아이스크림-3000</li>
+    </ul>
+
+</body>
+
+</html>
