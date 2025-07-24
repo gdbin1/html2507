@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원형 그라데이션</title>
+    <style>
+        /* div {
+            width: 50px;
+            height: 30px;
+            margin: 10px;
+
+        } */
+
+        /* 그라데이션에 그림자 추가 */
+        div {
+            width: 250px;
+            height: 250px;
+            margin: 50px;
+            box-shadow: 10px 5px 10px red;
+        }
+
+
+        /* Do it!  타원형으로 흰색, 노란색, 빨간색으로 바뀌는 그러데이션 .grad1 스타일 만들기 */
+        .grad1 {
+            border-radius: 300px;
+            background: red;
+            background: radial-gradient(white, yellow, red);
+            position: relative;
+            left: 0px;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Do it! 원형으로 흰색, 노란색, 빨간색으로 바뀌는 그러데이션 .grad2 스타일 만들기  */
+        .grad2 {
+            border-radius: 500px;
+            background: red;
+            background: radial-gradient(circle, white, yellow, red);/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+</body>
+
+</html>

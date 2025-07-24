@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>불릿 바꾸기</title>
+    <style>
+        ul {
+            list-style: none;
+            /* 불릿 없앰 */
+            margin-left: -30px;
+            /* 왼쪽 여백 줄임 */
+        }
+
+        li {
+            padding-left: 50px;
+            /* 왼쪽 패딩 (박스 모델) */
+            line-height: 40px;
+            /* 줄간격 */
+            /* Do it! 목록 불릿 대신 배경 이미지 사용하기  */
+            background-image: url('./image/book-icon.png');
+            /* 배경 이미지 파일 */
+            background-repeat: no-repeat;
+            /* 배경 이미지 반복 안함 */
+            background-position: left center;
+            /* 배경 이미지 위치 */
+        }
+
+        body {
+            background-image: url("./image/bg2.png");
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-attachment: fixed;
+        }
+
+        /* div {
+            width: 400px;
+            height: 250px;
+            padding: 20px;
+            border: 20px dashed purple;
+            margin-bottom: 20px;
+            overflow: auto;
+            background-image: url("./image/bg3.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+        } */
+
+        #bg1 {
+            background-origin: padding-box;
+        }
+
+        #bg2 {
+            background-origin: border-box;
+        }
+
+        #bg3 {
+            background-origin: content-box;
+        }
+
+        body {
+            background-image: url("./image/bg4.jpg");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+            .box{
+      float:left;
+      border:1px solid #222;
+      width:300px;
+      height:300px;      
+      margin:20px;
+      background:url('./image/bg4.jpg') no-repeat left top;
+    }
+
+        #bg1 {
+            background-size: auto;
+        }
+
+        /* 원래 배경 이미지 크기로 표시 */
+        #bg2 {
+            background-size: 200px;
+        }
+
+        /* 너비는 200px, 높이는 자동 계산 */
+        #bg3 {
+            background-size: 50%;
+        }
+
+        /* 배경 이미지 너비는 요소 너비의 50%, 높이는 자동 계산 */
+        #bg4 {
+            background-size: 100% 100%;
+        }
+
+        /* 배경 이미지 너비와 높이는 요소 너비의 100%, 요소 높이의 100% */
+        #bg5 {
+            background-size: contain;
+        }
+
+        /* 요소 안에 배경 이미지가 다 보이도록 표시 */
+        #bg6 {
+            background-size: cover;
+        }
+
+        /* 요소를 완전히 덮도록 배경 이미지 표시 */
+    </style>
+</head>
+
+<body>
+    <h1>이지스퍼블리싱</h1>
+    <ul>
+        <li>회사소개</li>
+        <li>도서</li>
+        <li>자료실</li>
+        <li>질문답변</li>
+        <li>동영상강의</li>
+    </ul>
+    <div id="bg1">
+        <h2>바빠 시리즈 </h2>
+        <h3>-바쁜 학생을 위한 빠른 학습법</h3>
+        <p>쉬운 내용은 압축하여 빠르게, 어려운 내용은 더 많이 공부하는 효율적인 학습 설계가 되어 있는 바빠 연산법과 ‘손이 기억하는 훈련 프로그램’인 바빠 영어 시리즈가 있습니다.</p>
+    </div>
+    <div id="bg2">
+        <h2>바빠 시리즈 </h2>
+        <h3>-바쁜 학생을 위한 빠른 학습법</h3>
+        <p>쉬운 내용은 압축하여 빠르게, 어려운 내용은 더 많이 공부하는 효율적인 학습 설계가 되어 있는 바빠 연산법과 ‘손이 기억하는 훈련 프로그램’인 바빠 영어 시리즈가 있습니다.</p>
+    </div>
+    <div id="bg3">
+        <h2>바빠 시리즈 </h2>
+        <h3>-바쁜 학생을 위한 빠른 학습법</h3>
+        <p>쉬운 내용은 압축하여 빠르게, 어려운 내용은 더 많이 공부하는 효율적인 학습 설계가 되어 있는 바빠 연산법과 ‘손이 기억하는 훈련 프로그램’인 바빠 영어 시리즈가 있습니다.</p>
+    </div>
+      <div id="container">
+    <div class="box" id="bg1"></div>
+    <div class="box" id="bg2"></div>
+    <div class="box" id="bg3"></div>
+    <div class="box" id="bg4"></div>
+    <div class="box" id="bg5"></div>
+    <div class="box" id="bg6"></div>
+  </div>
+</body>
+
+</html>

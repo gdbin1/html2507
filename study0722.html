@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./fabicon.png/sunlight.png" type="image/png">
+    <!-- 구글 폰트링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Black+And+White+Picture&family=Gugi&family=Hi+Melody&display=swap"
+        rel="stylesheet">
+    <!-- 어썸 아이콘폰트 링크 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+    <style>
+        .hi-melody-korean {
+            font-family: "Hi Melody", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .bitcount-single-english {
+            font-family: "Bitcount Single", system-ui;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0,
+                "CRSV" 0.5,
+                "ELSH" 0,
+                "ELXP" 0;
+        }
+        li {
+            display: inline;
+        }
+
+        *{
+            cursor: pointer;
+        }
+
+
+        a{
+            cursor: grab;
+        }
+
+        body {
+            background-image: url("./image/sky.jpg");
+        }
+
+        .class {
+            color: red;
+        }
+
+        .class2 {
+            font-size: 130%;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px dotted blue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .del {
+            text-decoration: line-through;
+        }
+        .under {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center; color: blue;">숙소 예약 사이트</h1>
+    <ul style="text-align: right;" class=hi-melody-korean>
+        <li class="class class2">회원가입/로그인 후 이용</li>
+        <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="login.html">로그인/회원가입</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="#">문의하기</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-heart"></i>
+            <a href="#">찜</a>
+        </li>
+    </ul>
+    <form action="#">
+        <fieldset>
+            <legend>예악하기</legend>
+            <ul class="hi-melody-korean">
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#"></a>
+                    <label for="where">위치</label>
+                    <input type="text" id="where" placeholder="어디로 가시나요?">
+                </li>
+                <br>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="#"></a>
+                    <label for="phone">전화 번호</label>
+                    <input type="tel" id="phone" placeholder="연락 가능하신 분 번호" required>
+                </li>
+                <br>
+                <li>
+                    <i class="fa-solid fa-calendar"></i>
+                    <a href="#"></a>
+                    <label for="day1">예약 날짜</label>
+                    <input type="date" min="2025-07-22" max="2025-09-01">
+                </li>
+                <br>
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#"></a>
+                    <label for="people">인원수</label>
+                    <input type="number" id="인원수" max="4">
+                    <dd style="color: red;"><small>기본 2인/추가 인당+50000/단체 따로 문의</small></dd>
+                </li>
+                <p>방문 수단</p>
+                <i class="fa-solid fa-car-side"></i>
+                <a href="#"></a>
+                <input type="radio" name="how" id="car" value="차량방문">
+                <label for="how">차량</label>
+                <br>
+                <i class="fa-solid fa-shoe-prints"></i>
+                <a href="#"></a>
+                <input type="radio" name="how" id="walk" value="걸어서">
+                <label for="how">도보</label>
+            </ul>
+            <input style="color: blue; text-shadow:5px 5px 3px ;" type="submit" value="찾아보기">
+            <input style="color: red; text-shadow: 5px 5px 3px;" type="reset" value="취소하기">
+        </fieldset>
+        <br>
+        <h3 style="text-align: center;">고객 이벤트</h3>
+        <p>여름 휴가를 맞이하여 <span class="del">7월22일까지</span> <span class="class class2">
+                <이벤트>
+            </span> 를 진행합니다.</p>
+            <dd>이벤트 진행사항: 숙박 이용시 적립금+추가2% (원래 적립금에 +2% 총 5%씩 적립)</dd>
+        <p>고객님들의 성원에 힘입어 본 이벤트를 <span class="class class2 under">8월 30일까지 연장합니다.</span> 감사합니다</p>
+        <br>
+        <table>
+            <caption>고객 등급별 혜택</caption>
+            <thead>
+                <tr>
+                    <th>브론즈</th>
+                    <th>실버</th>
+                    <th>골드</th>
+                    <th>vip</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>3%할인</td>
+                    <td>5%할인</td>
+                    <td>10%할인</td>
+                    <td>10%할인+워터파크 이용원2인</td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <dd style="color: red;"><small>각 쿠폰은 최초 등급 달성시 1회 지급해드립니다.</small></dd>
+    <br>
+    <h3>등급 달성 조건</h3>
+    <table>
+        <tr>
+            <th>브론즈</th>
+            <th>실버</th>
+            <th>골드</th>
+            <th>vip</th>
+        </tr>
+        <tr>
+            <td>누적 적립금30,000달성</td>
+            <td>누적 적립금70,000달성</td>
+            <td>누적 적립금150,000달성</td>
+            <td>누적 적립금300,000달성</td>
+        </tr>
+    </table>
+    <p>등급 적립금은 누적으로 달성가능하며, 각 적립금은 10,000원부터 사용 가능합니다.
+        <br><span class="class class">단 모든 적립금은 매년 1월1일에 초기화됩니다.</span>
+    </p>
+    <br>
+    <hr>
+    <br>
+    <footer>
+        <small>
+            (과제 만들기)
+            <br>대표이사:나 | 사업자 등록번호:123-12-12345 | 메일:123@네이버
+            <br>주소:주소:경기도 수원시 ~~~~~~ㅁㄴㅇㅁㄴ
+            <span class="del"><br>전화번호:031-***-****</span>저나하지마삼 피곤함
+
+        </small>
+    
+    </footer>
+
+</body>
+
+</html>
