@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link rel="shortcut icon" href="./1f4a2.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>혼자 만들어보기</title>
+    <link rel="stylesheet" href="./css/self.css">
+    <a href="./self02.html"></a>
+
+</head>
+
+<body>
+    <h2>연습해보기</h2>
+    <form action="#">
+        <label for="fname">성</label><br>
+        <input type="text" id="성" name="성" value="김" readonly><br>
+        <label for="lname">이름</label><br>
+        <input type="text" id="성" name="lname" value="가빈" readonly> <br>
+        <ul style="list-style-type: none;">
+            <li><label><input type="radio" name="성별" value="남">남</label></li>
+            <li> <label><input type="radio" name="성별" value="여">여</label></li>
+        </ul>
+        <br>
+        <label for="today">날짜</label>
+        <input type="date" min="2025-07-21" max="2025-07-21">
+    </form>
+    <hr>
+    <h1>회원가입</h1>
+
+    <form action="#">
+        <fieldset></fieldset>
+        <legend>회원가입 화면</legend>
+        <style>
+            input {
+                border: 2px solid #4caf50;
+                border-radius: 30px;
+                background-color: yellow;
+            }
+        </style>
+        <p><small style="color: red;">3개월동안 로그인 하지 않을시 휴먼모드로 전환됩니다.</small></p>
+        <ul style="list-style: square;">
+            <li>
+                <label for="uid">아이디</label>
+                <input type="text" id="uid" placeholder="4~10자,공백,특수문자 없이" autofocus required><small><input
+                        type="submit" value="중복확인" style="color: red;"></small>
+            </li>
+            <li><label for="umail">이메일</label>
+                <input type="text" id="umail">
+            </li>
+            <li>
+                <label for="pwd1">비밀번호</label>
+                <input type="password" id="pwd1" placeholder="특수문자 포함6글자 이상">
+            </li>
+            <label for="pwd2">비밀번호 확인</label>
+            <input type="password" id="pwd2" placeholder="위와 정확히 동일하게 입력">
+            <li>
+                <label for="phone">전화번호</label>
+                <input type="number" id="phone" placeholder="-없이 입력하시오">
+            </li>
+            <li><label for="add">주소</label>
+                <input type="text" id="add">
+            </li>
+        </ul>
+        </fieldset>
+        <div id="button">
+            <input style="color: blue;" type="submit" value="가입하기">
+            <input style="color: red;" type="reset" value="취소하기">
+            <p><a href="./self03.html">이미 가입되신 고객님은 해당 글을 클릭하시면 예약 사이트로 넘어갑니다.</a></p>
+            <br><hr>
+            <p><a href="./self02.html">기타 문의 사항이 있다면 해당 링크를 클릭하세요.</a></p>
+
+        </div>
+    </form>
+</body>
+
+</html>

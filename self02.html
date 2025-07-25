@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의사항</title>
+    <link rel="shortcut icon" href="./1f4a2.svg" type="image/x-icon">
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>문의 사항</legend>
+            <ul>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="이름">
+                </li>
+                <li>
+                    <label for="phone">답변 받을 번호</label>
+                    <input type="number" id="phone" placeholder="-없이 숫자만 입력" required>
+                </li>
+                <li>
+                    <label for="mail">답변 받을 이메일 </label>
+                    <input type="text" id="mail" placeholder="필수사항 아님">
+                </li>
+                <li>
+                    <label for="memo">문의 사항 입력</label>
+                    <textarea id="memo" cols="40" rows="4"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <div id="button">
+            <input style="color: navy;" type="submit" value="제출하기">
+            <input style="color: red;" type="reset" value="취소하기">
+        </div>
+    </form>
+</body>
+</html>
