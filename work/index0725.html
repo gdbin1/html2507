@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8일차 과제</title>
+    <!-- 구글 폰트 링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Black+And+White+Picture&family=Gugi&family=Hi+Melody&display=swap"
+        rel="stylesheet">
+    <!-- 어썸 폰트 링크 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .black-and-white-picture-killer {
+            font-family: "Black And White Picture", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            height: 100vh;
+            width: 50vw;
+            margin: 1px;
+            background: url('../day0725image/killer.jpg');
+            background-size: 50% auto;
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+        @media screen and (min-width:750px) and (max-width:1050px) {
+            body {
+                background: url("../day0725image/simple.avif");
+                background-position: right;
+                background-size: cover;
+                background-repeat: no-repeat;
+                color: white;
+            }
+        }
+
+
+
+        table tr td {
+            border: 3px dashed red;
+            border-radius: 50px;
+            width: 150px;
+            height: 150px;
+        }
+
+        .nosell {
+            color: red;
+            font-weight: 900;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="black-and-white-picture-killer" style="text-align: center; color: rgb(170, 39, 39);">킬러들의 쇼핑몰</h1>
+    </header>
+    <nav>
+    <h3>주문 가능 목록<dd><strong style="color: red;">*총기 소지 불법 국가입니다*(문득 드라마 생각나서 만듬)</strong></dd>
+    </h3>
+    <table>
+        <tr>
+            <th>소총</th>
+            <th>저격총</th>
+            <th>권총</th>
+            <th>수류탄</th>
+        </tr>
+        <tr>
+            <td style="padding: 0;"><img src="../day0725image/ak47.jpg" alt="소총"
+                    style="width: 130px; height: 130px; margin: 0; padding: 0;"></td>
+            <td style="padding: 0;"><img src="../day0725image/sniper.webp" alt="저격"
+                    style="width: 130px; height: 130px; margin: 0; padding: 0;"></td>
+            <td style="padding: 0;"><img src="../day0725image/d_eagle.webp" alt="권총"
+                    style="width: 130px; height: 130px; margin: 0; padding: 0;"></td>
+            <td style="padding: 0;"><img src="../day0725image/bomb.webp" alt="수류탄"
+                    style="width: 130px; height: 130px; margin: 0; padding: 0;"></td>
+        </tr>
+        <tr>
+            <td style="color: navy; text-align: center; font-weight: bold;">100,000,000</td>
+            <td style="color: navy; text-align: center; font-weight: bold;">200,000,000</td>
+            <td style="color: navy; text-align: center; font-weight: bold;">70,000,000</td>
+            <td style="color: navy; text-align: center; font-weight: bold;">150,000,000</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;"><span class="nosell">판매 안함</span></td>
+            <td style="text-align: center;"><span class="nosell">드라마</span></td>
+            <td style="text-align: center;"><span class="nosell">생각나서</span></td>
+            <td style="text-align: center;"><span class="nosell">만듬</span></td>
+        </tr>
+    </table>
+    </nav>
+</body>
+
+</html>
