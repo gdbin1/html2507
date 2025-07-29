@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Black+And+White+Picture&family=Gugi&family=Hi+Melody&family=Playwrite+AU+QLD:wght@100..400&display=swap"
+        rel="stylesheet">
+    <!-- 어썸 아이콘 폰트 링크-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>0729_2</title>
+    <style>
+        .gugi-regular {
+            font-family: "Gugi", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .black-and-white-picture-korean2 {
+            font-family: "Black And White Picture", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            background-image: url(./sky.jpg);
+            background-size: cover;
+        }
+
+        fieldset {
+            box-shadow: 10px 10px 10px;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>예매 및 문의사항 페이지</h1>
+    <form>
+        <fieldset class="gugi-regular" style="background:linear-gradient(to right, #ffffff 0%, #9999ff 100%);;">
+            <legend>예약하기</legend>
+            <ul style="list-style-type: none;">
+                <li>
+                    <label for="name"><i class="fa-solid fa-user"></i>예약자분 성함</label>
+                    <input type="text" id="name" placeholder="예약자분 성함을 적어주세요" required>
+                </li>
+                <li>
+                    <label for="phone"><i class="fa-solid fa-phone"></i>예약자분 연락처</label>
+                    <input type="tel" id="phone" placeholder="-구분없이 입력" required>
+                </li>
+                <li>
+                    <label for="day"><i class="fa-solid fa-calendar-days"></i>날짜 선택</label>
+                    <input type="date" min="2025-07-29" max="2025-08-30" required>
+                </li>
+            </ul>
+            <input style="color: navy; box-shadow: 3px 3px 3px;" type="submit" value="예약하기">
+            <input style="color: red; box-shadow: 3px 3px 3px;" type="reset" value="취소하기">
+        </fieldset>
+    </form>
+    <br>
+    <hr><br>
+    <form>
+        <fieldset class="black-and-white-picture-korean2"
+            style="background:  linear-gradient(to right, #ffffff 0%, #ff6699 100%);;">
+            <legend>문의사항</legend>
+            <ul style="list-style-type: none;">
+                <li>
+                    <label for="name1"><i class="fa-solid fa-user"></i>성명</label>
+                    <input type="text" id="name1">
+                </li>
+                <li>
+                    <label for="phone1"><i class="fa-solid fa-phone"></i>연락처</label>
+                    <input type="tel" placeholder="답변 받으실 번호를 -구분없이 적어주세요" required>
+                </li>
+                <li>
+                    <label for="memo"><i class="fa-solid fa-comment"></i>문의</label>
+                    <textarea id="memo" rows="3" cols="40" placeholder="문의 하실 내용을 적어주세요" required></textarea>
+                </li>
+            </ul>
+            <input style="color: navy; box-shadow: 3px 3px 3px; " type="submit" value="제출하기">
+            <input style="color: red; box-shadow: 3px 3px 3px;" type="reset" value="취소하기">
+        </fieldset>
+    </form>
+</body>
+
+</html>
