@@ -11,3 +11,6 @@ tr,td
     border-radius: 25px;
     border-collapse: collapse;
 }
+.yellow{background-color: yellow;}
+
+.red{background-color: rgb(180, 72, 22);}
