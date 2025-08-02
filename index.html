@@ -4,8 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 구글 폰트 링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Brush+Script&family=Nanum+Pen+Script&display=swap"
+        rel="stylesheet">
+    <!-- css링크 -->
     <link rel="stylesheet" href="./index.css">
-    <!--        Music I use: Bensound.com
+    <!-- 오디오 출처  Music I use: Bensound.com
 License code: FU3D5NLQSHXD4ZTU
 Artist: : Yunior Arronte-->
 
@@ -20,75 +27,116 @@ Artist: : Yunior Arronte-->
         table,
         tr,
         td {
-            border: 3px dashed purple;
+            border: 5px solid navy;
             border-radius: 30px;
             width: 300px;
             height: 100px;
             text-align: center;
-            margin: 0 auto;
-            border-collapse: collapse;
+            margin-left: 0px auto;
+            border-collapse: separate
+        }
+
+
+        .nanum-pen-script-korean {
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 150%;
+        }
+
+        td {
+            border: 3px solid rgb(194, 169, 31);
+            /* cursor: grab;} */
+        }
+        nav a {
+
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            padding: 0.4rem 0;
+            transition: 0.3s;
             cursor: grab;
+        }
+
+        nav a:hover {
+            color: #ff7a18;
+        }
+
+        nav:has(a:hover) a:not(:hover) {
+            opacity: 0.3;
         }
     </style>
 </head>
 
-<body>
-    <div>
-        <audio controls autoplay muted loop>
-            <source src="./firesidechat.mp3" type="audio/mpeg" />
-        </audio>
+<body class="nanum-pen-script-korean">
+    <nav>
+        <div>
+            <audio controls autoplay muted loop>
+                <source src="./firesidechat.mp3" type="audio/mpeg" />
+            </audio>
+        </div>
+        <h1 style="text-align: center; font-size: 170%;">나의 과제방</h1>
+        <div style="display: flex; justify-content: flex-start; gap: 20px;">
+            <table>
+                <tr>
+                    <th>2025-07월 과제</th>
+                </tr>
+                <tr>
+                    <td>day01_0716 <a href="./work/index0716.html">[ 0716_과제 바로가기 ]</td>
+                </tr>
+                <tr>
+                    <td>day02_0717 <a href="./work/index0717.html">[ 0717_과제 바로가기 ]</td>
+
+                </tr>
+                <tr>
+                    <td>day03_0718 <a href="./work/index0718.html">[ 0718_과제 바로가기 ]</a></td>
+
+                </tr>
+                <tr>
+                    <td>day04_0721 <a href="./work/index0721.html">[ 0721_과제 바로가기 ]</a></td>
+
+                </tr>
+                <tr>
+                    <td>day05_0722 <a href="./work/index0722.html">[ 0722_과제 바로가기 ]</a></td>
+
+                </tr>
+                <tr>
+                    <td>day06_0723 <a href="./work/index0723.html">[ 0723_과제 바로가기 ]</a></td>
+
+                </tr>
+                <tr>
+                    <td>day07_0724 <a href="./work/index0724.html">[ 0724_과제 바로가기 ]</a></td>
+
+                </tr>
+                <tr>
+                    <td>day08_0725 <a href="./work/index0725.html">[ 0725_과제 바로가기 ]</a></td>
+
+                </tr>
+                <tr>
+                    <td>day09_0728 <a href="./work/index0728.html">[ 0728_과제 바로가기 ]</a></td>
+
+                </tr>
+                <tr>
+                    <td>day10_0729 <a href="./work/index0729.html">[ 0729_과제 바로가기 ]</a></td>
+
+                </tr>
+                <tr>
+                    <td>day11_0730 <a href="./work/index0730.html">[ 0730_과제 바로가기 ]</a></td>
+
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>2025-08월 과제</th>
+                </tr>
+                <tr>
+                    <td>day13_0801 <a href="./work/index0801.html">[ 0801_과제 바로가기 ]</a></td>
+
+                </tr>
+            </table>
+    </nav>
     </div>
-    <h1 style="text-align: center; font-size: 130%;">나의 과제방</h1>
-    <table>
-        <tr>
-            <td>day01_0716</td>
-            <td><a href="./work/index0716.html">[ 0716 ]</a></td>
-        </tr>
-        <tr>
-            <td>day02_0717</td>
-            <td><a href="./work/index0717.html">[ 0717 ]</a></td>
-        </tr>
-        <tr>
-            <td>day03_0718</td>
-            <td><a href="./work/index0718.html">[ 0718 ]</a></td>
-        </tr>
-        <tr>
-            <td>day04_0721</td>
-            <td><a href="./work/index0721.html">[ 0721 ]</a></td>
-        </tr>
-        <tr>
-            <td>day05_0722</td>
-            <td><a href="./work/index0722.html">[ 0722 ]</a></td>
-        </tr>
-        <tr>
-            <td>day06_0723</td>
-            <td><a href="./work/index0723.html">[ 0723 ]</a></td>
-        </tr>
-        <tr>
-            <td>day07_0724</td>
-            <td><a href="./work/index0724.html">[ 0724 ]</a></td>
-        </tr>
-        <tr>
-            <td>day08_0725</td>
-            <td><a href="./work/index0725.html">[ 0725 ]</a></td>
-        </tr>
-        <tr>
-            <td>day09_0728</td>
-            <td><a href="./work/index0728.html">[ 0728 ]</a></td>
-        </tr>
-        <tr>
-            <td>day10_0729</td>
-            <td><a href="./work/index0729.html">[ 0729 ]</a></td>
-        </tr>
-        <tr>
-            <td>day11_0730</td>
-            <td><a href="./work/index0730.html">[ 0730 ]</a></td>
-        </tr>
-        <tr>
-            <td>day13_0801</td>
-            <td><a href="./work/index0801.html">[ 0801 ]</a></td>
-        </tr>
-    </table>
     <script src="./index.js"></script>
 </body>
 

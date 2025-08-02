@@ -4,3 +4,10 @@
     left: 10px;
     padding: 5px;
 }
+table{
+    box-shadow: 5px 5px 5px;
+}
+td{
+    box-shadow: 5px 5px 5px;
+     background: linear-gradient(to left, #99ccff 0%, #ffffcc 100%);
+}
