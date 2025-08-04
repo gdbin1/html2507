@@ -1,0 +1,6 @@
+body {
+    background: url("./background.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
